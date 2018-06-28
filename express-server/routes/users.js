@@ -1,9 +1,11 @@
-var express = require('express');
-var router = express.Router();
-let mongoose = require('mongoose');
+'use strict';
+
+const express = require('express');
+const router = express.Router();
+const mongoose = require('mongoose');
 //mongoose.connect('mongodb://localhost/usersSchemaPract');
 mongoose.connect('mongodb://192.168.99.100:27017/usersSchemaPract')
-let User = require('../models/user');
+const User = require('../models/user');
 
 
 /* GET users listing. */
